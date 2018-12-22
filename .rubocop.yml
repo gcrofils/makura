@@ -1,0 +1,20 @@
+inherit_from: .rubocop_todo.yml
+
+
+Metrics/LineLength:
+  Max: 120
+  IgnoredPatterns: ['(\A|\s)#']
+  Exclude:
+    - 'spec/**/*.rb'
+    - makura.gemspec
+
+Metrics/BlockLength:
+  Exclude:
+    - Guardfile
+    - makura.gemspec
+    
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    
